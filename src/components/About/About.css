@@ -22,7 +22,9 @@
 }
 
 .about .link--icon {
+  margin-left: 0.8em;
   margin-right: 0.8em;
+  font-size: 28px;
 }
 
 .about .btn--outline {
@@ -46,9 +48,9 @@
 .about__picture {
   width: 180px;
   height: 180px;
-  border-radius: 70%;   /* round profile */
+  border-radius: 70%; /* round profile */
   object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .about__intro {

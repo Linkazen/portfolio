@@ -1,5 +1,4 @@
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import { FaItchIo, FaLinkedin, FaGithub } from 'react-icons/fa6'
 import { about } from '../../portfolio'
 import './About.css'
 
@@ -21,16 +20,16 @@ const About = () => {
           />
         )}
 
-    <div className='about__intro'>
-      {name && (
-        <h1>
-          Hi, I am <span className='about__name'>{name}.</span>
-        </h1>
-      )}
+        <div className='about__intro'>
+          {name && (
+            <h1>
+              Hi, I am <span className='about__name'>{name}.</span>
+            </h1>
+          )}
 
-      {role && <h2 className='about__role'>A {role}.</h2>}
-      <p className='about__desc'>{description && description}</p>
-      </div>
+          {role && <h2 className='about__role'>A {role}.</h2>}
+          <p className='about__desc'>{description && description}</p>
+        </div>
       </div>
 
       <div className='about__contact center'>
@@ -50,7 +49,7 @@ const About = () => {
                 aria-label='github'
                 className='link link--icon'
               >
-                <GitHubIcon />
+                <FaGithub />
               </a>
             )}
 
@@ -60,7 +59,17 @@ const About = () => {
                 aria-label='linkedin'
                 className='link link--icon'
               >
-                <LinkedInIcon />
+                <FaLinkedin />
+              </a>
+            )}
+
+            {social.itchio && (
+              <a
+                href={social.itchio}
+                aria-label='itchio'
+                className='link link--icon'
+              >
+                <FaItchIo />
               </a>
             )}
           </>
