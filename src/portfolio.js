@@ -13,10 +13,11 @@ const about = {
 
   description:
     "I'm an engineer primarily working with C++, C#, Godot and Unity. I enjoy creating games and working on backend systems for engines and other types of apps.",
-  resume: 'https://example.com',
+  // resume: 'https://example.com',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/jonathan-hurst-ba82702b2/',
+    github: 'https://github.com/Linkazen',
+    itchio: 'https://linkazen.itch.io/',
   },
 }
 
