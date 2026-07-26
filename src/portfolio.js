@@ -7,7 +7,7 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Jonathan Hurst',
-  role: 'Game/Engine Programming',
+  role: 'Game/Engine Developer',
   picture:
     'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png',
 
