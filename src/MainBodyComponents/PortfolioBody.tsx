@@ -4,7 +4,7 @@ export default function PortfolioBody() {
   return (
     <>
       <section id="portfolioBody">
-        <p></p>
+        <p>Blah blah blah ipsum or something</p>
       </section>
     </>
   );
