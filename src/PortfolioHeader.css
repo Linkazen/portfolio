@@ -1,0 +1,17 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+
+    text-align: center;
+    color: white;
+
+    margin-top: 2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+
+    background-color: #80808080;
+}
