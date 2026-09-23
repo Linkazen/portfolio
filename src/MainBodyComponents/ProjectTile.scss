@@ -1,13 +1,32 @@
 @use "/src/style/colours.scss";
 
 #ProjectTileContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: grey;
-    border: colours.$module-border-size solid colours.$module-border-colour;
-    border-radius: colours.$module-border-radius;
-    width: 20vw;
-    margin: 2vh 2vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: grey;
+	border: colours.$module-border-size solid colours.$module-border-colour;
+	border-radius: colours.$module-border-radius;
+	width: 20vw;
+	margin: 2vh 2vw;
+}
+
+#TileImgContainer img {
+	object-fit: fill;
+	width: 20vw;
+	height: 16vw;
+	max-width: 100%;
+	border-top-left-radius: colours.$module-border-radius;
+	border-top-right-radius: colours.$module-border-radius;
+}
+
+#TileTextContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	height: 100%;
 }

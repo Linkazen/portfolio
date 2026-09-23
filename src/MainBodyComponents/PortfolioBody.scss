@@ -1,39 +1,39 @@
 @use "/src/style/colours.scss";
 
 #portfolioBody {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: colours.$module-border-size solid colours.$module-border-colour;
-    border-radius: colours.$module-border-radius;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: colours.$module-border-size solid colours.$module-border-colour;
+	border-radius: colours.$module-border-radius;
 
-    text-align: center;
-    color: white;
+	text-align: center;
+	color: white;
 
-    margin-top: 2vh;
-    margin-left: 7.5vw;
-    margin-right: 7.5vw;
-    margin-bottom: 5vw;
+	margin-top: 2vh;
+	margin-left: 7.5vw;
+	margin-right: 7.5vw;
+	margin-bottom: 5vw;
 
-    background-color: colours.$module-background-colour;
+	background-color: colours.$module-background-colour;
 }
 
-img {
-    max-height: 6vh;
+#WorkExperienceDiv img {
+	max-height: 6vh;
 }
 
 .ProjectsDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
-    flex: 0 0 (calc(1 / 3) * 100%);
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+	flex: 0 0 (calc(1 / 3) * 100%);
+	width: 100%;
 }
 
 h1 {
-    text-align: center;
+	text-align: center;
 }
