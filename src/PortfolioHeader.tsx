@@ -1,10 +1,10 @@
-import "./PortfolioHeader.css";
+import "./PortfolioHeader.scss";
 
 export default function PortfolioHeader() {
   return (
-    <section>
-      <h1 id="folioTitle">Jonathan Hurst</h1>
-      <p>Game Engine Engineer</p>
+    <section id="portfolioHeader">
+      <h1>Jonathan Hurst</h1>
+      <p>Game Engine Developer | Software Engineer</p>
     </section>
   );
 }

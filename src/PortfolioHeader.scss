@@ -1,9 +1,11 @@
-section {
+@use "style/colours.scss";
+
+#portfolioHeader {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid white;
+    border: 2px solid colours.$module-border-colour;
 
     text-align: center;
     color: white;
@@ -11,7 +13,7 @@ section {
     margin-top: 2vh;
     margin-left: 5vw;
     margin-right: 5vw;
-    margin-bottom: 5vw;
+    margin-bottom: 2.5vw;
 
-    background-color: #80808080;
+    background-color: colours.$module-background-colour;
 }

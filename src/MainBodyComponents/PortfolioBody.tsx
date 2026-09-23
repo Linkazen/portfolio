@@ -1,9 +1,11 @@
-import "./PortfolioBody.css";
+import "./PortfolioBody.scss";
 
 export default function PortfolioBody() {
   return (
     <>
-      <section></section>
+      <section id="portfolioBody">
+        <p></p>
+      </section>
     </>
   );
 }
