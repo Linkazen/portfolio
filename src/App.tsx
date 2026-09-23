@@ -1,11 +1,11 @@
-import "./App.css";
+import PortfolioHeader from "./PortfolioHeader";
 
 function App() {
-	return (
-		<>
-			<h1 id="folioTitle">Jonathan Hurst</h1>
-		</>
-	);
+  return (
+    <>
+      <PortfolioHeader />
+    </>
+  );
 }
 
 export default App;
