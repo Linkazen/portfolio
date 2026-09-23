@@ -1,0 +1,13 @@
+@use "/src/style/colours.scss";
+
+#ProjectTileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    border: colours.$module-border-size solid colours.$module-border-colour;
+    border-radius: colours.$module-border-radius;
+    width: 20vw;
+    margin: 2vh 2vw;
+}

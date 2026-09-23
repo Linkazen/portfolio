@@ -1,6 +1,7 @@
 import "./PortfolioHeader.scss";
 import PortfolioIcon from "./MainBodyComponents/PortfolioIcon";
 import { FaGithub, FaLinkedin, FaItchIo } from "react-icons/fa";
+import { PiReadCvLogo } from "react-icons/pi";
 
 export default function PortfolioHeader() {
   return (
@@ -14,6 +15,7 @@ export default function PortfolioHeader() {
           link="https://www.linkedin.com/in/jonathan-hurst-ba82702b2/"
         />
         <PortfolioIcon icon={FaItchIo} link="https://linkazen.itch.io/" />
+        {/*<PortfolioIcon icon={PiReadCvLogo} link="" />*/}
       </div>
     </section>
   );
