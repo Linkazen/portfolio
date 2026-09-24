@@ -106,7 +106,16 @@ export default function PortfolioBody() {
 									description=""
 									imagePath=""
 									hoverGifPath=""
-									portfolioIcons={[]}
+									portfolioIcons={[
+										<PortfolioIcon
+											icon={FaGithub}
+											link="https://github.com/Serpendio/2-too-many-jam"
+										/>,
+										<PortfolioIcon
+											icon={FaItchIo}
+											link="https://jowsey.itch.io/sincantation"
+										/>,
+									]}
 								/>
 								<ProjectTile
 									title="Breathing Space"
@@ -131,13 +140,15 @@ export default function PortfolioBody() {
 					title="Personal Projects"
 					body={
 						<>
-							<ProjectTile
-								title="Niko Engine"
-								description=""
-								imagePath=""
-								hoverGifPath=""
-								portfolioIcons={[]}
-							/>
+							<div className="ProjectsDiv">
+								<ProjectTile
+									title="Niko Engine"
+									description=""
+									imagePath=""
+									hoverGifPath=""
+									portfolioIcons={[]}
+								/>
+							</div>
 						</>
 					}
 					hasBreak={false}
