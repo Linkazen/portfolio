@@ -21,13 +21,12 @@ export default function ProjectTile({
 
 	return (
 		<>
-			<div
-				id="ProjectTileContainer"
-				className="ProjectTileContainer"
-				onMouseEnter={() => setIsHovered(true)}
-				onMouseLeave={() => setIsHovered(false)}
-			>
-				<div id="TileImgContainer">
+			<div id="ProjectTileContainer" className="ProjectTileContainer">
+				<div
+					id="TileImgContainer"
+					onMouseEnter={() => setIsHovered(true)}
+					onMouseLeave={() => setIsHovered(false)}
+				>
 					{isHovered ? (
 						<img src={hoverGifPath} alt={title} />
 					) : (

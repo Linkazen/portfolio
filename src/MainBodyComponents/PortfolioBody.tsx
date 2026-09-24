@@ -41,7 +41,7 @@ export default function PortfolioBody() {
 							<div className="ProjectsDiv">
 								<ProjectTile
 									title="Galactic Garage"
-									description="Made for our Professional Project at Abertay University. This game is a multiplayer co-op party game, where you and a friend repair ships whilst dealing with and repairing malfunctions on your space station."
+									description="Made for my Professional Project at Abertay University. This game is a multiplayer co-op party game, where you and a friend repair ships whilst dealing with and repairing malfunctions on your space station."
 									imagePath="/src/Assets/Images/GalacticGaragePoster.png"
 									hoverGifPath="/src/Assets/Gifs/PlaceholderGif.gif"
 									portfolioIcons={[
@@ -53,7 +53,7 @@ export default function PortfolioBody() {
 								/>
 								<ProjectTile
 									title="World Machine"
-									description="This is a game engine made for the Game Engine Development module at Abertay University. It's primarily created in C++, with working reflection, level editor, and integrates Jolt Physics for physics simulations."
+									description="This is a DirectX11 engine made for the Game Engine Development module at Abertay University. It's created in C++, with working reflection, level editor, and integrates Jolt Physics for physics simulations."
 									imagePath=""
 									hoverGifPath=""
 									portfolioIcons={[
@@ -97,14 +97,23 @@ export default function PortfolioBody() {
 								<ProjectTile
 									title="Born to Krill"
 									description=""
-									imagePath=""
+									imagePath="src/Assets/Images/BornToKrillCover.png"
 									hoverGifPath=""
-									portfolioIcons={[]}
+									portfolioIcons={[
+										<PortfolioIcon
+											icon={FaGithub}
+											link="https://github.com/Linkazen/GlobalGameJam2025"
+										/>,
+										<PortfolioIcon
+											icon={FaItchIo}
+											link="https://aronagox.itch.io/born-to-krill"
+										/>,
+									]}
 								/>
 								<ProjectTile
 									title="Sincantation"
 									description=""
-									imagePath=""
+									imagePath="src/Assets/Images/SincantationCover.png"
 									hoverGifPath=""
 									portfolioIcons={[
 										<PortfolioIcon
@@ -120,16 +129,34 @@ export default function PortfolioBody() {
 								<ProjectTile
 									title="Breathing Space"
 									description=""
-									imagePath=""
+									imagePath="src/Assets/Images/BreathingSpaceCover.png"
 									hoverGifPath=""
-									portfolioIcons={[]}
+									portfolioIcons={[
+										<PortfolioIcon
+											icon={FaGithub}
+											link="https://github.com/Linkazen/FiniteSpaceJam"
+										/>,
+										<PortfolioIcon
+											icon={FaItchIo}
+											link="https://linkazen.itch.io/breathing-space"
+										/>,
+									]}
 								/>
 								<ProjectTile
 									title="Speed Lich"
 									description=""
-									imagePath=""
+									imagePath="src/Assets/Images/SpeedLichCover.png"
 									hoverGifPath=""
-									portfolioIcons={[]}
+									portfolioIcons={[
+										<PortfolioIcon
+											icon={FaGithub}
+											link="https://github.com/Linkazen/halloweengamejam2024"
+										/>,
+										<PortfolioIcon
+											icon={FaItchIo}
+											link="https://linkazen.itch.io/speedlich"
+										/>,
+									]}
 								/>
 							</div>
 						</>
@@ -137,7 +164,7 @@ export default function PortfolioBody() {
 					hasBreak={true}
 				/>
 				<ProjectSection
-					title="Personal Projects"
+					title="Personal Projects & Open Source Contributions"
 					body={
 						<>
 							<div className="ProjectsDiv">
@@ -146,7 +173,24 @@ export default function PortfolioBody() {
 									description=""
 									imagePath=""
 									hoverGifPath=""
-									portfolioIcons={[]}
+									portfolioIcons={[
+										<PortfolioIcon
+											icon={FaGithub}
+											link="https://github.com/Linkazen/WorldMachine"
+										/>,
+									]}
+								/>
+								<ProjectTile
+									title="Kando"
+									description=""
+									imagePath="src/Assets/Images/icon.png"
+									hoverGifPath=""
+									portfolioIcons={[
+										<PortfolioIcon
+											icon={FaGithub}
+											link="https://github.com/kando-menu/kando"
+										/>,
+									]}
 								/>
 							</div>
 						</>
