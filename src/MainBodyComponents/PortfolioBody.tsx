@@ -43,7 +43,7 @@ export default function PortfolioBody() {
 									title="Galactic Garage"
 									description="Made for my Professional Project at Abertay University. This game is a multiplayer co-op party game, where you and a friend repair ships whilst dealing with and repairing malfunctions on your space station."
 									imagePath="/src/Assets/Images/GalacticGaragePoster.png"
-									hoverGifPath="/src/Assets/Gifs/PlaceholderGif.gif"
+									hoverGifPath=""
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaItchIo}

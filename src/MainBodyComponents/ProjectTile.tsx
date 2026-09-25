@@ -27,7 +27,7 @@ export default function ProjectTile({
 					onMouseEnter={() => setIsHovered(true)}
 					onMouseLeave={() => setIsHovered(false)}
 				>
-					{isHovered ? (
+					{isHovered && hoverGifPath != "" ? (
 						<img src={hoverGifPath} alt={title} />
 					) : (
 						<img src={imagePath} alt={title} />
