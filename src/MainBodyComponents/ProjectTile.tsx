@@ -4,6 +4,8 @@ import React from "react";
 
 type ProjectTileProps = {
 	title: string;
+	yearReleased: string;
+	toolsUsed: React.ReactElement[]; // Icons specifying which tools were used in the creation of the project
 	description: string;
 	imagePath: string;
 	hoverGifPath: string;
@@ -12,6 +14,8 @@ type ProjectTileProps = {
 
 export default function ProjectTile({
 	title,
+	yearReleased,
+	toolsUsed,
 	description,
 	imagePath,
 	hoverGifPath,
@@ -34,7 +38,11 @@ export default function ProjectTile({
 					)}
 				</div>
 				<div id="TileTextContainer">
-					<h4>{title}</h4>
+					<div id="ProjectInfoContainer">
+						<h4>{title}</h4>
+						<h4>{yearReleased}</h4>
+						<div id="ToolsUsedContainer">{toolsUsed}</div>
+					</div>
 					<p>{description}</p>
 					<div id="PortfolioIconsContainer">{portfolioIcons}</div>
 				</div>

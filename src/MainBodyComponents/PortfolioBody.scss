@@ -41,3 +41,9 @@
 h1 {
 	text-align: center;
 }
+
+#WorkExperienceIconContainer {
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
+}

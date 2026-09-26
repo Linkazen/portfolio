@@ -1,7 +1,6 @@
 import "./PortfolioHeader.scss";
 import PortfolioIcon from "./MainBodyComponents/PortfolioIcon";
 import { FaGithub, FaLinkedin, FaItchIo } from "react-icons/fa";
-import { PiReadCvLogo } from "react-icons/pi";
 
 export default function PortfolioHeader() {
 	return (

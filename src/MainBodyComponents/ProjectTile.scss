@@ -14,7 +14,8 @@
 
 #TileImgContainer {
 	width: 100%;
-	border-bottom: colours.$module-border-size solid colours.$module-border-colour;
+	border-bottom: colours.$module-border-size solid
+		colours.$module-border-colour;
 }
 
 #TileImgContainer img {
@@ -39,4 +40,19 @@
 	display: flex;
 	flex-direction: row;
 	column-gap: 0.75vw;
+}
+
+#ProjectInfoContainer > h4 {
+	margin: 5px;
+}
+
+#ProjectInfoContainer {
+	display: flex;
+	align-items: center;
+}
+
+#ToolsUsedContainer {
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
 }
