@@ -14,6 +14,10 @@
 	margin-bottom: 5vw;
 
 	background-color: colours.$module-background-colour;
+}
 
-	height: 100%;
+.react-pdf__Document {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
