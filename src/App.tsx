@@ -23,12 +23,12 @@ function App() {
 		<>
 			<PortfolioHeader setActiveLayout={setActiveLayout} />
 			{renderLayout()}
-			{/*<div id="VideoContainer">
+			<div id="VideoContainer">
 				<img
 					src="src/Assets/Videos/FacesBounce.webp"
 					id="BackgroundVideo"
 				></img>
-			</div>*/}
+			</div>
 		</>
 	);
 }
