@@ -1,0 +1,19 @@
+@use "/src/style/colours.scss";
+
+#CVBody {
+	border: colours.$module-border-size solid colours.$module-border-colour;
+	border-radius: colours.$module-border-radius;
+	padding: 1em 1em;
+
+	text-align: center;
+	color: white;
+
+	margin-top: 2vh;
+	margin-left: 7.5vw;
+	margin-right: 7.5vw;
+	margin-bottom: 5vw;
+
+	background-color: colours.$module-background-colour;
+
+	height: 100%;
+}
