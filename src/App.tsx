@@ -6,7 +6,7 @@ import CVBody from "./MainBodyComponents/CVBody";
 import { Layouts } from "./Types/Layouts";
 
 function App() {
-	const [activeLayout, setActiveLayout] = useState(Layouts.CV);
+	const [activeLayout, setActiveLayout] = useState(Layouts.PORTFOLIO);
 
 	function renderLayout(): React.JSX.Element {
 		switch (activeLayout) {
