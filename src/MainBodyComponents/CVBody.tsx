@@ -17,14 +17,22 @@ export default function CVBody() {
 	return (
 		<>
 			<div id="CVBody">
+				<a
+					href={professionalCVLetter}
+					download="Jonathan-Hurst-CV"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<button id="DownloadCVButton">Download CV</button>
+				</a>
 				<ErrorBoundary fallback={<p>Failed to load PDF.</p>}>
 					<Suspense fallback={<p>Loading document…</p>}>
 						<Document file={professionalCVLetter}>
 							<Suspense fallback={<p>Loading page...</p>}>
-								<Page pageNumber={1} />
+								<Page scale={1.5} pageNumber={1} />
 							</Suspense>
 							<Suspense fallback={<p>Loading page...</p>}>
-								<Page pageNumber={2} />
+								<Page scale={1.5} pageNumber={2} />
 							</Suspense>
 						</Document>
 					</Suspense>
