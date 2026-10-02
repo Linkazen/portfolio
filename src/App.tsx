@@ -1,5 +1,5 @@
 import PortfolioBody from "./MainBodyComponents/PortfolioBody";
-import PortfolioHeader from "./PortfolioHeader";
+import PortfolioHeader from "./MainBodyComponents/PortfolioHeader";
 import "./App.scss";
 import React, { useState } from "react";
 import CVBody from "./MainBodyComponents/CVBody";

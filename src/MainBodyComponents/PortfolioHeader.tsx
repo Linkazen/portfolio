@@ -1,7 +1,7 @@
 import "./PortfolioHeader.scss";
-import PortfolioIcon from "./MainBodyComponents/PortfolioIcon";
+import PortfolioIcon from "../Components/PortfolioIcon";
 import { FaGithub, FaLinkedin, FaItchIo } from "react-icons/fa";
-import { Layouts } from "./Types/Layouts";
+import { Layouts } from "../Types/Layouts";
 
 type PortfolioHeaderProps = {
 	setActiveLayout: React.Dispatch<React.SetStateAction<number>>;
@@ -26,10 +26,13 @@ export default function PortfolioHeader({
 				<button onClick={() => setActiveLayout(Layouts.PORTFOLIO)}>
 					Portfolio
 				</button>
-				<button onClick={() => {
-					setActiveLayout(Layouts.CV);
-					
-				}}>CV</button>
+				<button
+					onClick={() => {
+						setActiveLayout(Layouts.CV);
+					}}
+				>
+					CV
+				</button>
 			</div>
 		</section>
 	);

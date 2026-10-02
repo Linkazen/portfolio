@@ -1,0 +1,15 @@
+$default-react-icon-hover-colour: rgb(60, 60, 60);
+$default-react-icon-hover-opacity: 0.78;
+
+@mixin icons-theming($hover-colour, $alpha) {
+	.PortfolioIcon {
+		border-radius: 20%;
+		background-color: rgba($hover-colour, 0);
+		padding: 5px;
+		transition: background-color 0.4s;
+	}
+
+	.PortfolioIcon:hover {
+		background-color: rgba($hover-colour, $alpha);
+	}
+}

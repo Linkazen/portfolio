@@ -1,4 +1,5 @@
-@use "style/colours.scss";
+@use "/src/style/colours.scss";
+@use "/src/style/styles.scss";
 
 #portfolioHeader {
 	display: flex;
@@ -19,6 +20,11 @@
 	padding: 1vh 0 2vh 0;
 
 	background-color: colours.$module-background-colour;
+
+	@include styles.icons-theming(
+		styles.$default-react-icon-hover-colour,
+		styles.$default-react-icon-hover-opacity
+	);
 }
 
 #SocialIconsContainer {

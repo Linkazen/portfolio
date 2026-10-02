@@ -1,8 +1,8 @@
 import "./PortfolioBody.scss";
 import { FaGithub, FaItchIo, FaReact } from "react-icons/fa6";
-import PortfolioIcon from "./PortfolioIcon";
-import ProjectSection from "./ProjectSection";
-import ProjectTile from "./ProjectTile";
+import PortfolioIcon from "../Components/PortfolioIcon";
+import ProjectSection from "../Components/ProjectSection";
+import ProjectTile from "../Components/ProjectTile";
 import { SiGodotengine, SiSfml, SiTypescript, SiUnity } from "react-icons/si";
 import { TbBrandCpp, TbBrandCSharp } from "react-icons/tb";
 

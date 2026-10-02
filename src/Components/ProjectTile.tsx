@@ -1,6 +1,7 @@
 import "./ProjectTile.scss";
 import "./PortfolioIcon";
 import React from "react";
+import { IconContext } from "react-icons";
 
 type ProjectTileProps = {
 	title: string;
