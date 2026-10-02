@@ -16,19 +16,13 @@
 	background-color: colours.$module-background-colour;
 }
 
-.react-pdf__Document {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.react-pdf__Page {
-	max-width: 100%;
-}
-
 #DownloadCVButton {
 	width: 15em;
 	height: 5em;
 
 	margin-bottom: 2em;
+}
+
+#CVBody embed {
+	height: 100vh;
 }
