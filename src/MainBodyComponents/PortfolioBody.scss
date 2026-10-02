@@ -1,4 +1,5 @@
 @use "/src/style/colours.scss";
+@use "/src/style/styles.scss";
 
 #portfolioBody {
 	display: flex;
@@ -16,7 +17,7 @@
 	margin-right: 7.5vw;
 	margin-bottom: 5vw;
 
-	background-color: colours.$module-background-colour;
+	background-color: styles.$default-background-colour;
 }
 
 #WorkExperienceDiv img {

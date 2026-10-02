@@ -6,7 +6,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	background-color: grey;
+	background-color: styles.$default-project-tile-background-colour;
 	border: colours.$module-border-size solid colours.$module-border-colour;
 	border-radius: colours.$module-border-radius;
 	width: 16vw;
