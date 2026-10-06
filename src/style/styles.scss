@@ -4,6 +4,8 @@ $default-react-icon-hover-opacity: 0.78;
 
 @mixin icons-theming($hover-colour, $alpha) {
 	.PortfolioIcon {
+		width: 2em;
+		height: 2em;
 		border-radius: 20%;
 		background-color: rgba($hover-colour, 0);
 		padding: 5px;
