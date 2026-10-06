@@ -9,7 +9,7 @@
 	background-color: styles.$default-project-tile-background-colour;
 	border: colours.$module-border-size solid colours.$module-border-colour;
 	border-radius: colours.$module-border-radius;
-	width: 16vw;
+	width: 16em;
 	margin: 2vh 2vw;
 
 	@include styles.icons-theming(
@@ -26,7 +26,7 @@
 
 #TileImgContainer img {
 	object-fit: fill;
-	height: 12.8vw;
+	height: 12.8em;
 	max-width: 100%;
 	border-top-left-radius: colours.$module-border-radius;
 	border-top-right-radius: colours.$module-border-radius;
@@ -61,4 +61,9 @@
 	display: flex;
 	flex-direction: row;
 	gap: 4px;
+}
+
+#ToolsUsedContainer > * {
+	width: 1.5em;
+	height: 1.5em;
 }
