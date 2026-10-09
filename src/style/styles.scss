@@ -3,20 +3,28 @@ $default-react-icon-hover-colour: rgb(60, 60, 60);
 $default-react-icon-hover-opacity: 0.78;
 
 @mixin icons-theming($hover-colour, $alpha) {
-	.PortfolioIcon {
-		width: 2em;
-		height: 2em;
-		border-radius: 20%;
-		background-color: rgba($hover-colour, 0);
-		padding: 5px;
-		transition: background-color 0.4s;
-	}
+  .PortfolioIcon {
+    width: 2em;
+    height: 2em;
+    border-radius: 20%;
+    background-color: rgba($hover-colour, 0);
+    padding: 5px;
+    transition: background-color 0.4s;
+  }
 
-	.PortfolioIcon:hover {
-		background-color: rgba($hover-colour, $alpha);
-	}
+  .PortfolioIcon:hover {
+    background-color: rgba($hover-colour, $alpha);
+  }
 }
 
 // Main Portfolio
 $default-project-tile-background-colour: grey;
 $default-background-colour: #808080b0;
+
+@mixin buttons-theming {
+  Button {
+    border: 0.1em solid lightgray;
+    border-radius: 10%;
+    box-shadow: none;
+  }
+}
