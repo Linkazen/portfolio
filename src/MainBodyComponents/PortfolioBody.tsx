@@ -19,6 +19,8 @@ import sincantationCover from "../Assets/Images/SincantationCover.png";
 import speedLichCover from "../Assets/Images/SpeedLichCover.png";
 import worldMachineCover from "../Assets/Images/WorldMachineScreenShot.png";
 import galacticGarageReel from "../Assets/Videos/GGReel.webm";
+import worldMachineReel from "../Assets/Videos/WorldMachineReel.webm";
+import graphicsProjectReel from "../Assets/Videos/GraphicsProjectReel.webm";
 
 export default function PortfolioBody() {
 	return (
@@ -78,7 +80,9 @@ export default function PortfolioBody() {
 									toolsUsed={[<TbBrandCpp />]}
 									description="This is a DirectX11 engine made for the Game Engine Development module at Abertay University. With working reflection, level editor, and integrates Jolt Physics for physics simulations."
 									imagePath={worldMachineCover}
-									hoverGifSource={null}
+									hoverGifSource={
+										<source src={worldMachineReel} type="video/webm" />
+									}
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaGithub}
@@ -87,16 +91,18 @@ export default function PortfolioBody() {
 									]}
 								/>
 								<ProjectTile
-									title="CMP 301 DX11 Graphics Project"
+									title="DX11 Graphics Project"
 									yearReleased="2025"
 									toolsUsed={[<TbBrandCpp />]}
 									description="This is a project showcases different DirectX11 rendering techniques and features. Such as, lighting and shadows, post processing effects, and tesselation techniques."
 									imagePath={graphicsCover}
-									hoverGifSource={null}
+									hoverGifSource={
+										<source src={graphicsProjectReel} type="video/webm" />
+									}
 									portfolioIcons={[]}
 								/>
 								<ProjectTile
-									title='CMP 208 "One in a Krillion"'
+									title="One in a Krillion"
 									yearReleased="2025"
 									toolsUsed={[<TbBrandCpp />]}
 									description="This game is a PC/PS5 cross-platform Hotline Miami inspired deck building rogue-lite. Created with the team One in a Krillion for CMP 208 - Game Programming and System Architectures."
