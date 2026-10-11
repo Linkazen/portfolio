@@ -18,6 +18,7 @@ import oneInAKrillionCover from "../Assets/Images/OneInAKrillion.png";
 import sincantationCover from "../Assets/Images/SincantationCover.png";
 import speedLichCover from "../Assets/Images/SpeedLichCover.png";
 import worldMachineCover from "../Assets/Images/WorldMachineScreenShot.png";
+import galacticGarageReel from "../Assets/Videos/GGReel.webm";
 
 export default function PortfolioBody() {
 	return (
@@ -61,7 +62,9 @@ export default function PortfolioBody() {
 									toolsUsed={[<SiGodotengine />]}
 									description="Made for my Professional Project at Abertay University. This game is a multiplayer co-op party game, where you and a friend repair ships whilst dealing with and repairing malfunctions on your space station."
 									imagePath={galacticGarageCover}
-									hoverGifPath=""
+									hoverGifSource={
+										<source src={galacticGarageReel} type="video/webm" />
+									}
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaItchIo}
@@ -75,7 +78,7 @@ export default function PortfolioBody() {
 									toolsUsed={[<TbBrandCpp />]}
 									description="This is a DirectX11 engine made for the Game Engine Development module at Abertay University. With working reflection, level editor, and integrates Jolt Physics for physics simulations."
 									imagePath={worldMachineCover}
-									hoverGifPath=""
+									hoverGifSource={null}
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaGithub}
@@ -89,7 +92,7 @@ export default function PortfolioBody() {
 									toolsUsed={[<TbBrandCpp />]}
 									description="This is a project showcases different DirectX11 rendering techniques and features. Such as, lighting and shadows, post processing effects, and tesselation techniques."
 									imagePath={graphicsCover}
-									hoverGifPath=""
+									hoverGifSource={null}
 									portfolioIcons={[]}
 								/>
 								<ProjectTile
@@ -98,7 +101,7 @@ export default function PortfolioBody() {
 									toolsUsed={[<TbBrandCpp />]}
 									description="This game is a PC/PS5 cross-platform Hotline Miami inspired deck building rogue-lite. Created with the team One in a Krillion for CMP 208 - Game Programming and System Architectures."
 									imagePath={oneInAKrillionCover}
-									hoverGifPath=""
+									hoverGifSource={null}
 									portfolioIcons={[]}
 								/>
 								<ProjectTile
@@ -107,7 +110,7 @@ export default function PortfolioBody() {
 									yearReleased="2024"
 									description="This is a rhythm fighting game, where you must time attacks to the beat in order to damage your opponents. With multiplayer mode and a singleplayer arcade mode."
 									imagePath={beatDownCover}
-									hoverGifPath=""
+									hoverGifSource={null}
 									portfolioIcons={[]}
 								/>
 							</div>
@@ -126,7 +129,7 @@ export default function PortfolioBody() {
 									toolsUsed={[<SiUnity />, <TbBrandCSharp />]}
 									description="In this game you take control of a krill battling an octopus. Inspired by Cuphead, this game was made for the 48 hour Global Game Jam 2025."
 									imagePath={bornToKrillCover}
-									hoverGifPath=""
+									hoverGifSource={null}
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaGithub}
@@ -144,7 +147,7 @@ export default function PortfolioBody() {
 									toolsUsed={[<SiUnity />, <TbBrandCSharp />]}
 									description="This game is a roguelike where you can mix and match spells and battle enemies as you make your way through a dungeon. Made for the weeklong Two to One jam."
 									imagePath={sincantationCover}
-									hoverGifPath=""
+									hoverGifSource={null}
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaGithub}
@@ -162,7 +165,7 @@ export default function PortfolioBody() {
 									toolsUsed={[<SiGodotengine />]}
 									description="Use cameras to look for and avoid a monster, all while fixing your spaceship from deadly leaks. Created for the AGDS 2024 Freshers Jam."
 									imagePath={breathingSpaceCover}
-									hoverGifPath=""
+									hoverGifSource={null}
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaGithub}
@@ -180,7 +183,7 @@ export default function PortfolioBody() {
 									toolsUsed={[<SiGodotengine />]}
 									description="A fast paced movement shooter, that incentivizes speed. Created for the 2024 Halloween AGDS Game Jam"
 									imagePath={speedLichCover}
-									hoverGifPath=""
+									hoverGifSource={null}
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaGithub}
@@ -208,7 +211,7 @@ export default function PortfolioBody() {
 									toolsUsed={[<TbBrandCpp />]}
 									description="A Vulkan based cross-platform rendering engine, featuring model loading and basic controls with ImGui."
 									imagePath={nikoEngineCover}
-									hoverGifPath=""
+									hoverGifSource={null}
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaGithub}
@@ -222,7 +225,7 @@ export default function PortfolioBody() {
 									toolsUsed={[<FaReact />, <SiTypescript />]}
 									description="A desktop productivity menu, powered by Electron."
 									imagePath={kandoCover}
-									hoverGifPath=""
+									hoverGifSource={null}
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaGithub}

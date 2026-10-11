@@ -8,7 +8,7 @@ type ProjectTileProps = {
 	toolsUsed: React.ReactElement[]; // Icons specifying which tools were used in the creation of the project
 	description: string;
 	imagePath: string;
-	hoverGifPath: string;
+	hoverGifSource: React.ReactElement | null;
 	portfolioIcons: React.ReactElement[]; // Should be an array of PortfolioIcon elements.
 };
 
@@ -18,7 +18,7 @@ export default function ProjectTile({
 	toolsUsed,
 	description,
 	imagePath,
-	hoverGifPath,
+	hoverGifSource: hoverGifPath,
 	portfolioIcons,
 }: ProjectTileProps) {
 	const [isHovered, setIsHovered] = React.useState(false);
@@ -31,8 +31,13 @@ export default function ProjectTile({
 					onMouseEnter={() => setIsHovered(true)}
 					onMouseLeave={() => setIsHovered(false)}
 				>
-					{isHovered && hoverGifPath != "" ? (
-						<img src={hoverGifPath} alt={title} />
+					{isHovered && hoverGifPath != null ? (
+						<div>
+							<video autoPlay muted loop>
+								{hoverGifPath}
+							</video>
+							<div className="VideoShadow"></div>
+						</div>
 					) : (
 						<img src={imagePath} alt={title} />
 					)}

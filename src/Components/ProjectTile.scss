@@ -24,12 +24,27 @@
 		colours.$module-border-colour;
 }
 
-#TileImgContainer img {
-	object-fit: fill;
+#TileImgContainer {
 	height: 12.8em;
 	max-width: 100%;
-	border-top-left-radius: colours.$module-border-radius;
-	border-top-right-radius: colours.$module-border-radius;
+
+	img,
+	video {
+		object-fit: fill;
+		height: 12.8em;
+		max-width: 100%;
+		border-top-left-radius: colours.$module-border-radius;
+		border-top-right-radius: colours.$module-border-radius;
+	}
+
+	.VideoShadow {
+		position: absolute;
+		height: 12.8em;
+		width: 16em;
+		box-shadow:
+			rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+			rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	}
 }
 
 #TileTextContainer {
