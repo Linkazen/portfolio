@@ -21,6 +21,9 @@ import worldMachineCover from "../Assets/Images/WorldMachineScreenShot.png";
 import galacticGarageReel from "../Assets/Videos/GGReel.webm";
 import worldMachineReel from "../Assets/Videos/WorldMachineReel.webm";
 import graphicsProjectReel from "../Assets/Videos/GraphicsProjectReel.webm";
+import nikoEngineReel from "../Assets/Videos/NikoEngineReel.webm";
+import breathingSpaceReel from "../Assets/Videos/BreathingSpaceReel.webm";
+import speedLichReel from "../Assets/Videos/SpeedLichReel.webm";
 
 export default function PortfolioBody() {
 	return (
@@ -171,7 +174,9 @@ export default function PortfolioBody() {
 									toolsUsed={[<SiGodotengine />]}
 									description="Use cameras to look for and avoid a monster, all while fixing your spaceship from deadly leaks. Created for the AGDS 2024 Freshers Jam."
 									imagePath={breathingSpaceCover}
-									hoverGifSource={null}
+									hoverGifSource={
+										<source src={breathingSpaceReel} type="video/webm" />
+									}
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaGithub}
@@ -189,7 +194,9 @@ export default function PortfolioBody() {
 									toolsUsed={[<SiGodotengine />]}
 									description="A fast paced movement shooter, that incentivizes speed. Created for the 2024 Halloween AGDS Game Jam"
 									imagePath={speedLichCover}
-									hoverGifSource={null}
+									hoverGifSource={
+										<source src={speedLichReel} type="video/webm" />
+									}
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaGithub}
@@ -217,7 +224,9 @@ export default function PortfolioBody() {
 									toolsUsed={[<TbBrandCpp />]}
 									description="A Vulkan based cross-platform rendering engine, featuring model loading and basic controls with ImGui."
 									imagePath={nikoEngineCover}
-									hoverGifSource={null}
+									hoverGifSource={
+										<source src={nikoEngineReel} type="video/webm" />
+									}
 									portfolioIcons={[
 										<PortfolioIcon
 											icon={FaGithub}

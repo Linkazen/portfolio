@@ -5,10 +5,10 @@ import React from "react";
 type ProjectTileProps = {
 	title: string;
 	yearReleased: string;
-	toolsUsed: React.ReactElement[]; // Icons specifying which tools were used in the creation of the project
+	toolsUsed: React.ReactElement[]; // Icons specifying which tools were used in the creation of the project.
 	description: string;
 	imagePath: string;
-	hoverGifSource: React.ReactElement | null;
+	hoverGifSource: React.ReactElement | null; // Should place a <source> element with the video as src argument.
 	portfolioIcons: React.ReactElement[]; // Should be an array of PortfolioIcon elements.
 };
 
