@@ -1,15 +1,9 @@
 import "./PortfolioHeader.scss";
 import PortfolioIcon from "../Components/PortfolioIcon";
 import { FaGithub, FaLinkedin, FaItchIo } from "react-icons/fa";
-import { Layouts } from "../Types/Layouts";
+import { Link } from "react-router-dom";
 
-type PortfolioHeaderProps = {
-	setActiveLayout: React.Dispatch<React.SetStateAction<number>>;
-};
-
-export default function PortfolioHeader({
-	setActiveLayout,
-}: PortfolioHeaderProps) {
+export default function PortfolioHeader() {
 	return (
 		<section id="portfolioHeader">
 			<h1>Jonathan Hurst</h1>
@@ -23,16 +17,12 @@ export default function PortfolioHeader({
 				<PortfolioIcon icon={FaItchIo} link="https://linkazen.itch.io/" />
 			</div>
 			<div id="PageSelectionContainer">
-				<button onClick={() => setActiveLayout(Layouts.PORTFOLIO)}>
-					Portfolio
-				</button>
-				<button
-					onClick={() => {
-						setActiveLayout(Layouts.CV);
-					}}
-				>
-					CV
-				</button>
+				<Link to="/">
+					<button>Portfolio</button>
+				</Link>
+				<Link to="/cv">
+					<button>CV</button>
+				</Link>
 			</div>
 		</section>
 	);

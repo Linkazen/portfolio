@@ -1,35 +1,19 @@
 import PortfolioBody from "./MainBodyComponents/PortfolioBody";
 import PortfolioHeader from "./MainBodyComponents/PortfolioHeader";
 import "./App.scss";
-import React, { useState } from "react";
 import CVBody from "./MainBodyComponents/CVBody";
-import { Layouts } from "./Types/Layouts";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-	const [activeLayout, setActiveLayout] = useState(Layouts.PORTFOLIO);
-
-	function renderLayout(): React.JSX.Element {
-		switch (activeLayout) {
-			case Layouts.PORTFOLIO:
-				return <PortfolioBody />;
-			case Layouts.CV:
-				return <CVBody />;
-			default:
-				return <PortfolioBody />;
-		}
-	}
-
 	return (
-		<>
-			<PortfolioHeader setActiveLayout={setActiveLayout} />
-			{renderLayout()}
-			{/*<div id="VideoContainer">
-				<img
-					src="src/Assets/Videos/FacesBounce.webp"
-					id="BackgroundVideo"
-				></img>
-			</div>*/}
-		</>
+		<BrowserRouter>
+			<PortfolioHeader />
+
+			<Routes>
+				<Route path="/" element={<PortfolioBody />} />
+				<Route path="/cv" element={<CVBody />} />
+			</Routes>
+		</BrowserRouter>
 	);
 }
 
